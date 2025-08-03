@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #fff;
+  padding: 16px 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  top: 0;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.logo {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.logoText {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.menuToggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.headerLink{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navBtn,
+.nav a {
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 16px;
+  transition: color 0.2s ease;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.navBtn:hover,
+.nav a:hover {
+  color: #9333ea;
+}
+
+.active {
+  color: #9333ea;
+  font-weight: 500;
+}
+
+.btnBox {
+  display: flex;
+  gap: 12px;
+}
+
+.loginBtn {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1f2937;
+  transition: background-color 0.3s ease;
+}
+
+.loginBtn:hover {
+  background-color: #f3f4f6;
+}
+
+.signupBtn {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.signupBtn:hover {
+  background-color: #1f2937;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btnBox {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .loginBtn,
+  .signupBtn {
+    width: 100%;
+    text-align: center;
+  }
+}

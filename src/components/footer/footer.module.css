@@ -1,0 +1,111 @@
+.footer {
+    background-color: #0C1120;
+    color: white;
+    padding: 3rem 2rem;
+  }
+  
+  .container {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .linkList a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .linkList a:hover {
+    color: #fff;
+  }
+  
+  .text {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #1E2539;
+    border: none;
+    color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input::placeholder {
+    color: #888;
+  }
+  
+  .button {
+    width: 100%;
+    background-color: #8652FF;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #6b40cc;
+  }
+  
+  .bottom {
+    border-top: 1px solid #2c354d;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #aaa;
+  }
+  
+  .bottomLinks {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .minilogo{
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+  }

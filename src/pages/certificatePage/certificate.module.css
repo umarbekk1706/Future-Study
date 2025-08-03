@@ -1,0 +1,79 @@
+.certificate {
+  width: 794px;
+  height: 1123px;
+  margin: 40px auto;
+  padding: 100px 60px;
+  border: 12px solid #004080;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("./bgsertificate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  position: relative;
+  filter: grayscale(10px);
+}
+.title {
+  font-size: 66px;
+  margin-bottom: 80px;
+  margin-top: 150px;
+}
+.certificate p {
+  font-size: 24px;
+}
+.h2 {
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.sana {
+  font-size: 22px;
+  position: absolute;
+  bottom: 100px;
+}
+
+.stamp {
+  position: absolute;
+  transform: rotate(-25deg);
+  bottom: 50px;
+  right: 50px;
+  width: 140px;
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .certificate {
+    width: 100%;
+    margin: 40px auto;
+    padding: 30px 15px;
+    padding-top: 40px;
+    height: 500px;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("./bgsertificate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  .title {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .certificate p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .h2 {
+    font-size: 22px;
+  }
+  .sana {
+    font-size: 12px;
+    bottom: 50px;
+    width: 40%;
+  }
+  .stamp {
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    opacity: 0.8;
+  }
+}
