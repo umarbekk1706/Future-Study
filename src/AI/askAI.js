@@ -16,18 +16,18 @@ export async function askAI(messages, model) {
 
     const data = await res.json();
     
-    // AI javobining toza matnini olish
+   
     const content = data.choices?.[0]?.message?.content || "No response.";
 
-    // Keraksiz </think> taglaridan keyin bo‘lgan matnni ajratish
+  
     const cleaned = content.includes("</think>")
-      ? content.split("</think>").pop().trim() // </think>dan keyingi qismni olish
-      : content.trim(); // Agar </think> yo'q bo'lsa, toza matnni qaytarish
+      ? content.split("</think>").pop().trim() 
+      : content.trim(); 
 
-    return cleaned || "No response."; // Agar toza matn bo'lmasa, "No response."
+    return cleaned || "No response."; 
   } catch (err) {
     console.error("askAI error:", err);
-    return "⚠️ Failed to contact AI."; // Xato yuz bersa, foydalanuvchiga xabar berish
+    return "⚠️ Failed to contact AI."; 
   }
 }
 
@@ -42,11 +42,11 @@ export async function fetchModels() {
     });
     const data = await res.json();
 
-    // Model ro‘yxatini olish
-    return data.data.map((m) => m.id); // Models URL orqali olingan model IDlarini qaytaradi
+   
+    return data.data.map((m) => m.id); 
   } catch (err) {
     console.error("fetchModels error:", err);
-    return []; // Agar xato bo‘lsa, bo‘sh ro‘yxat qaytariladi
+    return []; 
   }
 }
 
