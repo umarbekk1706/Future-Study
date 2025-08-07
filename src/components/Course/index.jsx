@@ -2,9 +2,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 function CourseCard({ styles, data }) {
   const navigate = useNavigate();
-  
+
   function course(id) {
-    let isLogin = localStorage.getItem("login");    
+    let isLogin = localStorage.getItem("login");
     navigate(isLogin ? `/course/${id}` : "login");
   }
 
@@ -19,7 +19,7 @@ function CourseCard({ styles, data }) {
               : "https://www.shutterstock.com/image-photo/online-education-elearning-concept-person-600nw-2525348649.jpg"
           }
           alt={data?.name}
-        className={styles.cardImg}/>
+          className={styles.cardImg} />
       </div>
       <div className={styles.cardContent}>
         <strong className={styles.courseTitle}>{data?.name}</strong>
@@ -30,7 +30,7 @@ function CourseCard({ styles, data }) {
         </div>
 
         <button onClick={() => course(data.id)} className={styles.viewButton}>
-          Kursni ko'rish
+          View course
         </button>
       </div>
     </div>
