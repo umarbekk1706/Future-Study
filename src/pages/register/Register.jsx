@@ -66,8 +66,8 @@ function Register() {
           <img src="https://account.asus.com/img/login_img02.png" alt="sdf" />
         </div>
         <form action="" className={styles.form}>
-          <h2>Ro'yxatdan o'tish</h2>
-          <label htmlFor="name">Ism</label>
+          <h2>Log up</h2>
+          <label htmlFor="name">Name</label>
           <input
             onChange={(e) => setUser({ ...user, name: e.target.value.trim() })}
             value={user.name}
@@ -75,7 +75,7 @@ function Register() {
             type="text"
             placeholder="Ismingizni kiriting "
           />
-          <label htmlFor="familya">Familya</label>
+          <label htmlFor="familya">Last name</label>
           <input
             onChange={(e) =>
               setUser({ ...user, lastname: e.target.value.trim() })
@@ -103,7 +103,7 @@ function Register() {
             type="email"
             placeholder="Email kiriting "
           />
-          <label htmlFor="password">Parol</label>
+          <label htmlFor="password">Password</label>
           <input
             onChange={(e) =>
               setUser({ ...user, password: e.target.value.trim() })
@@ -114,10 +114,10 @@ function Register() {
             placeholder="Parol kiriting "
           />
           <button type="submit" id="submit-btn" onClick={reg}>
-            Ro'yxatdan o'tish
+            Log up
           </button>
           <p>
-            Account mavjud? <a href="/login">Kirish</a>
+            Have a account <a href="/login">Log in</a>
           </p>
         </form>
       </div>

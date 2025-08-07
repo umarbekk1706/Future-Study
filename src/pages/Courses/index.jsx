@@ -53,8 +53,6 @@ function CoursePage() {
             />
           </div>
         </div>
-
-        {/* 🔽 Video tanlash ro'yxati */}
         <div className={styles.videoList}>
           {course.videos.map((videoUrl, index) => (
             <button

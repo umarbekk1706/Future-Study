@@ -44,20 +44,20 @@ function Header() {
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
           <ul>
             <li>
-              <Link to="/">Bosh Sahifa</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/courses">Kurslar</Link>
+                <Link to="/courses">Courses</Link>
             </li>
             <li>
              
-              <Link to="/tests">Testlar</Link>
+              <Link to="/tests">Tests</Link>
             </li>
             <li>
               <Link to="/blogs">Blog</Link>
             </li>
             <li>
-               <Link to="/about-us">Biz haqimizda</Link>
+               <Link to="/about-us">About</Link>
             </li>
           </ul>
 
@@ -68,10 +68,10 @@ function Header() {
           ) : (
             <div className={styles.btnBox}>
               <button onClick={login} className={styles.loginBtn}>
-                Kirish
+                Log in 
               </button>
               <button onClick={login} className={styles.signupBtn}>
-                Ro'yxatdan o'tish
+                Log up
               </button>
             </div>
           )}

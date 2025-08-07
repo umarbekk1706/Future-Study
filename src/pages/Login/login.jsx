@@ -40,8 +40,8 @@ function Login() {
           </button>
         </Link>
         <form className={styles.form}>
-          <h2>Kirish</h2>
-          <p>Xush kelibsiz!</p>
+          <h2>Login</h2>
+          <p>Wellcome</p>
           <label htmlFor="username">Username</label>
           <input
             onChange={(e) => setUsername(e.target.value)}
@@ -50,7 +50,7 @@ function Login() {
             type="text"
             placeholder="Username kiriting"
           />
-          <label htmlFor="password">Parol</label>
+          <label htmlFor="password">Password</label>
           <input
             onChange={(e) => setPassword(e.target.value)}
             value={password}
@@ -59,10 +59,10 @@ function Login() {
             placeholder="Parol kiriting"
           />
           <button type="submit" id="submit-btn" onClick={check}>
-            Kirish
+            Login
           </button>
           <p>
-            Akkount yo'qmi? <a href="/register">Ro'yxatdan o'tish</a>
+            No account yet? <a href="/register">Sign up</a>
           </p>
         </form>
         <div className={styles.loginImg}>

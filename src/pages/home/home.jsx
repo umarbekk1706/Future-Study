@@ -15,17 +15,17 @@ function Home() {
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
-  
-  const user =JSON.parse(localStorage.getItem("user"))
+
+  const user = JSON.parse(localStorage.getItem("user"))
   function checkuser() {
-    if(user){
-        navigate("/courses")
-    }else{  
+    if (user) {
+      navigate("/courses")
+    } else {
       navigate("/login")
     }
   }
 
-  
+
   return (
     <div>
       <Header></Header>
@@ -33,28 +33,26 @@ function Home() {
         <div className={styles.heroInner}>
           <div className={styles.heroLeft}>
             <h1>
-              Bilimingizni oshiring,
-              kelajakni yarating
+              Enhance your knowledge,create the future.
             </h1>
             <p>
-              Zamonaviy kurslar va interaktiv testlar orqali o'z bilimingizni
-              yangi bosqichga ko'taring
+              Take your knowledge to the next level through modern courses and interactive tests.
             </p>
             <button className={styles.ctaBtn} onClick={checkuser}>
-              Kurslarni ko'rish <span>→</span>
+              View Courses <span>→</span>
             </button>
           </div>
-          
+
           <div className={styles.heroRight}>
             <img src="./heroimg.png" alt="Hero rasm" />
           </div>
         </div>
       </div>
 
-      
+
 
       <div className={styles.container} id="courses">
-        <h2 className={styles.title}>Kurslar</h2>
+        <h2 className={styles.title}>Courses</h2>
         <div className={styles.grid}>
           {data?.map((item) => (
             <Course key={item?.id} styles={styles} data={item} />
@@ -63,109 +61,106 @@ function Home() {
       </div>
 
       <div className={styles.statsSection} id="stats">
-        <h2 className={styles.statsTitle}>Statistika</h2>
+        <h2 className={styles.statsTitle}>Statistics</h2>
         <div className={styles.statsGrid}>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>👥</div>
             <div className={styles.statValue}>10,000+</div>
-            <div className={styles.statLabel}>Foydalanuvchilar</div>
+            <div className={styles.statLabel}>Users</div>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>📖</div>
             <div className={styles.statValue}>200+</div>
-            <div className={styles.statLabel}>Kurslar</div>
+            <div className={styles.statLabel}>Courses</div>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>📝</div>
             <div className={styles.statValue}>5,000+</div>
-            <div className={styles.statLabel}>Testlar</div>
+            <div className={styles.statLabel}>Tests</div>
           </div>
         </div>
       </div>
 
       <div className={styles.reviewsSection} id="review">
-        <h2 className={styles.reviewsTitle}>Foydalanuvchilar sharhlari</h2>
+        <h2 className={styles.reviewsTitle}>Terms of Use yoki Terms and Conditions</h2>
         <div className={styles.reviewsGrid}>
           <div className={styles.reviewCard}>
             <div className={styles.stars}>★★★★★</div>
             <p className={styles.reviewText}>
-              "Bu platforma orqali matematika fanidan bilimlarimni sezilarli
-              darajada oshirdim. Testlar juda foydali!"
+              "Through this platform, my knowledge in mathematics has improved significantly. The tests are very useful!"
             </p>
             <div className={styles.reviewer}>
               <div className={styles.avatar}></div>
               <div>
                 <div className={styles.name}>Aziz Karimov</div>
-                <div className={styles.role}>Talaba</div>
+                <div className={styles.role}>Student</div>
               </div>
             </div>
           </div>
           <div className={styles.reviewCard}>
             <div className={styles.stars}>★★★★★</div>
             <p className={styles.reviewText}>
-              "O'quvchilarim uchun ajoyib resurs. Kurslar sifati va tushunish
-              oson."
+              "A great resource for my students. The quality of the courses and ease of understanding are excellent."
             </p>
             <div className={styles.reviewer}>
               <div className={styles.avatar}></div>
               <div>
                 <div className={styles.name}>Nilufar Sobirova</div>
-                <div className={styles.role}>O'qituvchi</div>
+                <div className={styles.role}>Teacher</div>
               </div>
             </div>
           </div>
           <div className={styles.reviewCard}>
             <div className={styles.stars}>★★★★☆</div>
             <p className={styles.reviewText}>
-              "Dasturlash kurslarini tugatib, ishga joylashishda katta yordam
-              berdi. Rahmat!"
+              "Completing the programming courses greatly helped me get a job. Thank you!!"
             </p>
             <div className={styles.reviewer}>
               <div className={styles.avatar}></div>
               <div>
                 <div className={styles.name}>Jasur Toshmatov</div>
-                <div className={styles.role}>IT mutaxassisi</div>
+                <div className={styles.role}>IT Specialist</div>
               </div>
             </div>
           </div>
         </div>
 
-        <h2 className={styles.howItWorksTitle}>Qanday ishlaydi</h2>
+        <h2 className={styles.howItWorksTitle}>How does it work</h2>
         <div className={styles.stepsGrid}>
           <div className={styles.stepCard}>
             <div className={styles.stepIcon}>
               📘<span className={styles.stepNumber}>1</span>
             </div>
-            <div className={styles.stepTitle}>Kursni tanlang</div>
+            <div className={styles.stepTitle}>Choose a course</div>
             <div className={styles.stepDesc}>
-              O'zingizga kerakli kursni tanlang va ro'yxatdan o'ting
+              Select your preferred course and register
             </div>
           </div>
           <div className={styles.stepCard}>
             <div className={styles.stepIcon}>
               🎥<span className={styles.stepNumber}>2</span>
             </div>
-            <div className={styles.stepTitle}>Materialni o'rganing</div>
+            <div className={styles.stepTitle}>Master the content</div>
             <div className={styles.stepDesc}>
-              Video darslar va qo'shimcha materiallarni o'rganing
+              Watch the video lessons and review the supplementary materials.
             </div>
           </div>
           <div className={styles.stepCard}>
             <div className={styles.stepIcon}>
               🧠<span className={styles.stepNumber}>3</span>
             </div>
-            <div className={styles.stepTitle}>Testlarni yeching</div>
+            <div className={styles.stepTitle}>Attempt the test questions</div>
             <div className={styles.stepDesc}>
-              Bilimingizni mustahkamlash uchun testlarni yeching
+              Try practice tests to reinforce what you’ve learned!
             </div>
           </div>
           <div className={styles.stepCard}>
             <div className={styles.stepIcon}>
               🎓<span className={styles.stepNumber}>4</span>
             </div>
-            <div className={styles.stepTitle}>Sertifikat oling</div>
+            <div className={styles.stepTitle}>Get a certificate</div>
             <div className={styles.stepDesc}>
-              Kursni muvaffaqiyatli tugatib, sertifikat oling
+              Demonstrate your achievement by securing your course certificate.
             </div>
           </div>
         </div>

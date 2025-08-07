@@ -1,23 +1,23 @@
 export const blogPosts = [
   {
-    id: 1,
-    title: "React haqida",
-    date: "2025-05-14",
-    excerpt: "React — komponentlarga asoslangan JavaScript kutubxonasidir. O'z ichiga qayta ishlanadigan komponentlarni oladi...",
-    content: "React bu Facebook tomonidan ishlab chiqilgan, UI yaratish uchun ishlatiladigan JavaScript kutubxonasidir. React bilan ishlab chiqilgan ilovalar juda samarali va skalierlanadigan bo'ladi. React komponentlaridan tashkil topgan bo'lib, har bir komponentda faqat bitta vazifa bajariladi. Shuningdek, Virtual DOM texnologiyasidan foydalanadi, bu esa ilovalar ishlash tezligini oshiradi. React foydalanuvchi interfeyslarini yaratish uchun ishlatiladi va uni web ilovalar, mobil ilovalar (React Native) va desktop ilovalar yaratish uchun ham ishlatish mumkin..."
+    "id": 1,
+    "title": "About React",
+    "date": "2025-05-14",
+    "excerpt": "React is a JavaScript library based on components. It includes reusable components...",
+    "content": "React is a JavaScript library developed by Facebook and used for building user interfaces. Applications built with React are highly efficient and scalable. React is made up of components, each responsible for a single task. It also uses Virtual DOM technology, which improves application performance. React is primarily used for creating user interfaces and can be applied to web apps, mobile apps (via React Native), and even desktop apps..."
   },
   {
-    id: 2,
-    title: "JavaScript va TypeScript: Farqlari",
-    date: "2025-05-12",
-    excerpt: "JavaScript va TypeScript — web dasturlashda eng keng tarqalgan tillar. TypeScript JavaScriptning kengaytirilgan versiyasidir...",
-    content: "JavaScript — web dasturlashda ishlatiladigan eng mashhur dasturlash tili hisoblanadi. Biroq, JavaScriptda xatoliklarni oldini olish uchun TypeScript kabi yangi imkoniyatlar taqdim etilgan. TypeScript — JavaScriptning ustida ishlovchi statik turlanishga ega bo'lgan til. TypeScript kodini JavaScriptga kompilyatsiya qilish mumkin. Bu tilning afzalliklaridan biri, katta loyihalarda kodni boshqarishni osonlashtiradi va xatoliklarni aniqlashni tezlashtiradi..."
+    "id": 2,
+    "title": "JavaScript and TypeScript: Differences",
+    "date": "2025-05-12",
+    "excerpt": "JavaScript and TypeScript are among the most widely used languages in web development. TypeScript is an extended version of JavaScript...",
+    "content": "JavaScript is the most popular programming language used in web development. However, to prevent errors and improve code quality, TypeScript offers advanced features. TypeScript is a statically typed language built on top of JavaScript. Its code can be compiled into plain JavaScript. One of its main advantages is that it simplifies code management in large-scale projects and makes error detection faster..."
   },
   {
-    id: 3,
-    title: "CSS Flexbox haqida",
-    date: "2025-05-10",
-    excerpt: "CSS Flexbox — bu web dizaynda elementlarni vertikal va gorizontal ravishda joylashtirish uchun ishlatiladigan metod...",
-    content: "CSS Flexbox — bu CSSning yangi xususiyatlaridan biri bo‘lib, u web sahifalardagi elementlarni tartibga solishda yordam beradi. Flexbox yordamida elementlarni osonlik bilan vertikal va gorizontal ravishda joylashtirish mumkin. Flexbox container (asosan tashqi div) va uning ichidagi item-larga ega bo‘ladi. Containerning display: flex xususiyatiga ega bo‘lishi kerak, item-lar esa o‘zaro bo‘linadi va ularga mos xususiyatlar tayinlanadi..."
+    "id": 3,
+    "title": "About CSS Flexbox",
+    "date": "2025-05-10",
+    "excerpt": "CSS Flexbox is a layout method used in web design for aligning elements vertically and horizontally...",
+    "content": "CSS Flexbox is one of the newer features in CSS that helps arrange elements on web pages efficiently. With Flexbox, it’s easy to align items both vertically and horizontally. A Flexbox layout consists of a container (usually a wrapper div) and its items inside. The container should have a 'display: flex' property, and the items are distributed with appropriate styles to control their layout and alignment..."
   }
 ];

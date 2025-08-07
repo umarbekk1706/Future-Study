@@ -1,0 +1,157 @@
+{
+  "home": {
+    "heroTitle": "Boost Your Knowledge, Create the Future",
+    "heroDesc": "Elevate your skills with modern courses and interactive tests",
+    "viewCoursesBtn": "View Courses",
+    "coursesTitle": "Courses",
+    "statsTitle": "Statistics",
+    "statsUsers": "Users",
+    "statsCourses": "Courses",
+    "statsTests": "Tests",
+    "reviewsTitle": "User Reviews",
+    "howItWorksTitle": "How It Works",
+    "steps": {
+      "1": {
+        "title": "Choose a Course",
+        "desc": "Select the course you need and register"
+      },
+      "2": {
+        "title": "Learn the Material",
+        "desc": "Study video lessons and additional materials"
+      },
+      "3": {
+        "title": "Take the Tests",
+        "desc": "Complete tests to reinforce your knowledge"
+      },
+      "4": {
+        "title": "Get a Certificate",
+        "desc": "Successfully complete the course and get a certificate"
+      }
+    },
+    "reviews": [
+      {
+        "name": "Aziz Karimov",
+        "role": "Student",
+        "text": "This platform significantly improved my knowledge in mathematics. The tests are very helpful!",
+        "stars": "★★★★★"
+      },
+      {
+        "name": "Nilufar Sobirova",
+        "role": "Teacher",
+        "text": "An excellent resource for my students. The courses are high quality and easy to understand.",
+        "stars": "★★★★★"
+      },
+      {
+        "name": "Jasur Toshmatov",
+        "role": "IT Specialist",
+        "text": "Completing the programming courses helped me a lot in finding a job. Thanks!",
+        "stars": "★★★★☆"
+      }
+    ]
+  },
+  "login": {
+    "title": "Login",
+    "welcome": "Welcome!",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter username",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter password",
+    "submitBtn": "Login",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register",
+    "usernamePasswordError": "Please enter username and password!",
+    "invalidCredentials": "Invalid username or password!",
+    "fetchError": "Error fetching data."
+  },
+  "footer": {
+    "description": "Increase your knowledge and create the future through a modern education platform",
+    "quickLinksTitle": "Quick Links",
+    "links": {
+      "home": "Home",
+      "courses": "Courses",
+      "tests": "Tests",
+      "blog": "Blog",
+      "aboutUs": "About Us"
+    },
+    "contactTitle": "Contact",
+    "address": "Tashkent city, Amir Temur street, house 108",
+    "phone": "+998 90 123 45 67",
+    "email": "info@futurestudy.uz",
+    "newsletterTitle": "Stay Informed",
+    "newsletterDesc": "Be the first to know about new courses and opportunities",
+    "newsletterPlaceholder": "Your email address",
+    "subscribeBtn": "Subscribe",
+    "copyright": "© 2025 Future Study. All rights reserved.",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
+  },
+  "header": {
+    "home": "Home",
+    "courses": "Courses",
+    "tests": "Tests",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Log out",
+    "language": "Language"
+  },
+  "courseCard": {
+    "viewCourse": "View Course"
+  },
+  "blog": {
+    "title": "Our Blog",
+    "readMore": "Read More",
+    "back": "← Back",
+    "loading": "⏳ Loading...",
+    "notFound": "❌ Post not found"
+  },
+  "certificate": {
+    "pageTitle": "Certificate Page",
+    "certificateTitle": "CERTIFICATE",
+    "certificateTo": "This certificate is awarded to:",
+    "scoreLabel": "Score",
+    "dateLabel": "Date Issued",
+    "downloadPDF": "Download PDF"
+  },
+  "courseHome": {
+    "allCoursesTitle": "All Courses",
+    "loading": "Loading..."
+  },
+  "coursePage": {
+    "author": "Author:",
+    "rating": "Rating:",
+    "viewers": "Viewers:",
+    "video": "Video",
+    "loading": "Loading..."
+  },
+  "testList": {
+    "title": "List of Tests",
+    "testIconAlt": "Test icon",
+    "questionCount": "Number of questions",
+    "startTest": "Start Test"
+  },
+  "solveTest": {
+    "congrats": "🎉 Congratulations!",
+    "testFinished": "You have completed the test",
+    "yourScore": "Your Score",
+    "timeLeft": "Time Left",
+    "finishBtn": "Finish",
+    "testEnded": "Test finished. Please wait to see results...",
+    "backBtn": "Go Back",
+    "getCertificateBtn": "Get Certificate"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "intro": "\"Future Study\" is an innovative and quality education center. Our goal is to give every learner the opportunity to study independently and step confidently into the future.",
+    "whyChooseUs": "Why choose us?",
+    "features": [
+      "Qualified and experienced teachers",
+      "Practical and interactive lessons",
+      "Education based on new technologies",
+      "Personal approach and development"
+    ],
+    "cta": "Start your future with us!",
+    "buildFuture": "Build your future with \"Future Study\"!"
+  }
+}

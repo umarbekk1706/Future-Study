@@ -1,0 +1,157 @@
+{
+  "home": {
+    "heroTitle": "Bilingizni oshiring, kelajakni yarating",
+    "heroDesc": "Zamonaviy kurslar va interaktiv testlar orqali o'z bilimingizni yangi bosqichga ko'taring",
+    "viewCoursesBtn": "Kurslarni ko'rish",
+    "coursesTitle": "Kurslar",
+    "statsTitle": "Statistika",
+    "statsUsers": "Foydalanuvchilar",
+    "statsCourses": "Kurslar",
+    "statsTests": "Testlar",
+    "reviewsTitle": "Foydalanuvchilar sharhlari",
+    "howItWorksTitle": "Qanday ishlaydi",
+    "steps": {
+      "1": {
+        "title": "Kursni tanlang",
+        "desc": "O'zingizga kerakli kursni tanlang va ro'yxatdan o'ting"
+      },
+      "2": {
+        "title": "Materialni o'rganing",
+        "desc": "Video darslar va qo'shimcha materiallarni o'rganing"
+      },
+      "3": {
+        "title": "Testlarni yeching",
+        "desc": "Bilingizni mustahkamlash uchun testlarni yeching"
+      },
+      "4": {
+        "title": "Sertifikat oling",
+        "desc": "Kursni muvaffaqiyatli tugatib, sertifikat oling"
+      }
+    },
+    "reviews": [
+      {
+        "name": "Aziz Karimov",
+        "role": "Talaba",
+        "text": "Bu platforma orqali matematika fanidan bilimlarimni sezilarli darajada oshirdim. Testlar juda foydali!",
+        "stars": "★★★★★"
+      },
+      {
+        "name": "Nilufar Sobirova",
+        "role": "O'qituvchi",
+        "text": "O'quvchilarim uchun ajoyib resurs. Kurslar sifati va tushunish oson.",
+        "stars": "★★★★★"
+      },
+      {
+        "name": "Jasur Toshmatov",
+        "role": "IT mutaxassisi",
+        "text": "Dasturlash kurslarini tugatib, ishga joylashishda katta yordam berdi. Rahmat!",
+        "stars": "★★★★☆"
+      }
+    ]
+  },
+  "login": {
+    "title": "Kirish",
+    "welcome": "Xush kelibsiz!",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Username kiriting",
+    "passwordLabel": "Parol",
+    "passwordPlaceholder": "Parol kiriting",
+    "submitBtn": "Kirish",
+    "noAccount": "Akkount yo'qmi?",
+    "registerLink": "Ro'yxatdan o'tish",
+    "usernamePasswordError": "Username va Parol kiriting!!",
+    "invalidCredentials": "Username yoki parol xato!!",
+    "fetchError": "Ma'lumotlarni olishda xatolik yuz berdi."
+  },
+  "footer": {
+    "description": "Zamonaviy taʼlim platformasi orqali bilimingizni oshiring va kelajakni yarating",
+    "quickLinksTitle": "Tezkor havolalar",
+    "links": {
+      "home": "Bosh sahifa",
+      "courses": "Kurslar",
+      "tests": "Testlar",
+      "blog": "Blog",
+      "aboutUs": "Biz haqimizda"
+    },
+    "contactTitle": "Bog‘lanish",
+    "address": "Toshkent sh, Amir Temur ko‘chasi, 108-uy",
+    "phone": "+998 90 123 45 67",
+    "email": "info@futurestudy.uz",
+    "newsletterTitle": "Yangiliklardan xabardor bo‘ling",
+    "newsletterDesc": "Yangi kurslar va imkoniyatlar haqida birinchilardan bo‘lib xabardor bo‘ling",
+    "newsletterPlaceholder": "Email manzilingiz",
+    "subscribeBtn": "Obuna bo‘lish",
+    "copyright": "© 2025 Future Study. Barcha huquqlar himoyalangan.",
+    "terms": "Foydalanish shartlari",
+    "privacy": "Maxfiylik siyosati"
+  },
+  "header": {
+    "home": "Bosh Sahifa",
+    "courses": "Kurslar",
+    "tests": "Testlar",
+    "blog": "Blog",
+    "aboutUs": "Biz haqimizda",
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish",
+    "logout": "Chiqish",
+    "language": "Til"
+  },
+  "courseCard": {
+    "viewCourse": "Kursni ko'rish"
+  },
+  "blog": {
+    "title": "Bizning Blog",
+    "readMore": "Ko'proq o'qish",
+    "back": "← Orqaga",
+    "loading": "⏳ Yuklanmoqda...",
+    "notFound": "❌ Post topilmadi"
+  },
+  "certificate": {
+    "pageTitle": "Sertifikat Sahifasi",
+    "certificateTitle": "SERTIFIKAT",
+    "certificateTo": "Ushbu sertifikat quyidagi shaxsga beriladi:",
+    "scoreLabel": "Baho",
+    "dateLabel": "Berilgan sana",
+    "downloadPDF": "PDF Yuklab olish"
+  },
+  "courseHome": {
+    "allCoursesTitle": "Hamma kurslar",
+    "loading": "Yuklanmoqda..."
+  },
+  "coursePage": {
+    "author": "Muallif:",
+    "rating": "Baholash:",
+    "viewers": "Ko'rishlar:",
+    "video": "Video",
+    "loading": "Yuklanmoqda..."
+  },
+  "testList": {
+    "title": "Testlar Ro'yxati",
+    "testIconAlt": "Test ikonkasi",
+    "questionCount": "Savollar soni",
+    "startTest": "Testni boshlash"
+  },
+  "solveTest": {
+    "congrats": "🎉 Tabriklaymiz!",
+    "testFinished": "Siz testni yakunladingiz",
+    "yourScore": "Sizning natijangiz",
+    "timeLeft": "Qolgan vaqt",
+    "finishBtn": "Yakunlash",
+    "testEnded": "Test yakunlandi. Natijani ko‘rish uchun kuting...",
+    "backBtn": "Ortga qaytish",
+    "getCertificateBtn": "Sertifikatni olish"
+  },
+  "aboutUs": {
+    "title": "Biz haqimizda",
+    "intro": "\"Future Study\" — bu innovatsion va sifatli ta'limni taqdim etuvchi zamonaviy o‘quv markazi. Bizning maqsadimiz har bir o‘quvchiga mustaqil o‘rganish va kelajakka ishonch bilan qadam qo‘yish imkoniyatini yaratishdir.",
+    "whyChooseUs": "Nima uchun bizni tanlashadi?",
+    "features": [
+      "Malakali va tajribali o‘qituvchilar",
+      "Amaliy va interaktiv darslar",
+      "Yangi texnologiyalar asosida ta'lim",
+      "Shaxsiy yondashuv va rivojlanish"
+    ],
+    "cta": "Kelajagingizni biz bilan boshlang!",
+    "buildFuture": "\"Future Study\" bilan o'z kelajagingni qur !"
+  }
+}

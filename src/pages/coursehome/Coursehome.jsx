@@ -16,7 +16,7 @@ function Coursehome() {
       .catch((error) => console.error("Ma'lumot yuklashda xatolik:", error));
   }, []);
 
-  // Ma'lumotlar hali yuklanmagan bo'lsa
+
   if (!data || data.length === 0) {
     return <div className={styles.loading}>Loading...</div>;
   }
@@ -24,7 +24,7 @@ function Coursehome() {
   return (
     <div>
       <Header />
-               <h1 className={styles.coursh1}>Hamma kurslar</h1>
+               <h1 className={styles.coursh1}>All courses</h1>
       <div className={styles.container} id="courses">
         <div className={styles.grid}>
           {data.map((item) => (

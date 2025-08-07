@@ -9,7 +9,7 @@ function Blog() {
     <>
         <Header/>
       <div className={styles.blogContainer}>
-      <h1 className={styles.blogTitle}>📚 Bizning Blog</h1>
+      <h1 className={styles.blogTitle}>📚 Our Blog</h1>
       <div className={styles.blogList}>
          {blogPosts.map((post) => (
             <div key={post.id}  className={styles.blogCard}>
@@ -18,7 +18,7 @@ function Blog() {
               <h2 className={styles.blogPostTitle}>{post.title}</h2>
               <p className={styles.blogDate}>📅 {post.date}</p>
               <p className={styles.blogExcerpt}>{post.excerpt}</p>
-             <Link to={`/post/${post.id}`} className={styles.readMore}>Ko'proq o'qish</Link>
+             <Link to={`/post/${post.id}`} className={styles.readMore}>Read more</Link>
             </div>
           </div>
         ))}

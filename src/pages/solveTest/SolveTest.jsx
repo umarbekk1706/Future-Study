@@ -22,7 +22,7 @@ function SolveTest() {
   const [score, setScore] = useState(0);
   const [openModal, setOpenModal] = useState(false);
 
-  // Testni yuklash
+
   useEffect(() => {
     fetch(`https://6815e18a32debfe95dbcb148.mockapi.io/fstudy/tests/${id}`)
       .then((res) => res.json())
@@ -34,7 +34,7 @@ function SolveTest() {
   }, [id]);
   console.log(test);
 
-  // Taymer
+ 
   useEffect(() => {
     if (timeLeft === null || isFinished) return;
 
@@ -85,7 +85,7 @@ function SolveTest() {
     navigate("/tests");
   };
 
-  if (!test) return <div className={styles.loading}>Yuklanmoqda...</div>;
+  if (!test) return <div className={styles.loading}>Uploading...</div>;
 
   const progress = (
     (timeLeft / (test.questions.length * 2 * 60)) *
@@ -99,7 +99,7 @@ function SolveTest() {
         <div className={styles.header}>
           <h2>{test.title}</h2>
           <div className={styles.timer}>
-            Qolgan vaqt: <span>{formatTime(timeLeft)}</span>
+            Time left: <span>{formatTime(timeLeft)}</span>
           </div>
           <div className={styles.progressBar}>
             <div
@@ -136,12 +136,12 @@ function SolveTest() {
             ))}
 
             <button className={styles.finishBtn} onClick={finishTest}>
-              Yakunlash
+              Complete
             </button>
           </div>
         ) : (
           <div className={styles.finished}>
-            <h3>Test yakunlandi. Natijani ko‘rish uchun kuting...</h3>
+            <h3>Test finished! Results loading...</h3>
           </div>
         )}
       </div>
@@ -157,14 +157,14 @@ function SolveTest() {
         <DialogTitle
           sx={{ textAlign: "center", fontSize: "24px", fontWeight: 600, mt: 2 }}
         >
-          🎉 Tabriklaymiz!
+          🎉 Success
         </DialogTitle>
         <DialogContent sx={{ textAlign: "center", py: 3 }}>
           <Typography variant="h6" sx={{ mb: 1 }}>
-            Siz testni yakunladingiz
+            Test submitted successfully!
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px", mb: 3 }}>
-            Sizning natijangiz:{" "}
+            Your result:{" "}
             <strong style={{ fontSize: "22px" }}>{score} / 100</strong>
           </Typography>
 
@@ -181,7 +181,7 @@ function SolveTest() {
             color="secondary"
             sx={{ borderRadius: "20px", px: 4 }}
           >
-            Ortga qaytish
+            Go back
           </Button>
            { score>80 && <Button
             onClick={() => navigate(`/certificate?score=${score}&title=${encodeURIComponent(test.title)}`)}
@@ -189,7 +189,7 @@ function SolveTest() {
             color="primary"
             sx={{ borderRadius: "20px", px: 4 }}
           >
-            Sertifikatni olish
+            Get certificate
           </Button>
              
            }

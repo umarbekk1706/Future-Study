@@ -117,7 +117,7 @@
   background-color: #1f2937;
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 768px) {
   .menuToggle {
     display: block;

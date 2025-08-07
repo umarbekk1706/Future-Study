@@ -53,14 +53,14 @@ const CertificatePage = () => {
           fontFamily: "Arial, sans-serif",
         }}
       >
-        <h2>Sertifikat Sahifasi</h2>
+        <h2>CERTIFICATE PAGE</h2>
         <div
           id="certificate"
           className={styles.certificate}
         >
-          <h1 className={styles.title} >SERTIFIKAT</h1>
+          <h1 className={styles.title} >CERTIFICATE</h1>
           <p>
-            Ushbu sertifikat quyidagi shaxsga beriladi:
+            This certificate is issued to the following person:
           </p>
           <h2
             className={styles.h2}
@@ -68,13 +68,12 @@ const CertificatePage = () => {
             {user.name} {user.lastName}
           </h2>
           <p>
-            <strong>"{title}"</strong> nomli testni muvaffaqiyatli yakunlagani
-            uchun.
+            for successfully completing the test <strong>"{title}"</strong>.
           </p>
           <p >
-            Baho: <strong>{score} / 100</strong>
+            grade: <strong>{score} / 100</strong>
           </p>
-          <p className={styles.sana}>Berilgan sana: {date}</p>
+          <p className={styles.sana}>Date given: {date}</p>
 
           {/* Muhr rasmi */}
           <img
@@ -96,7 +95,7 @@ const CertificatePage = () => {
             cursor: "pointer",
           }}
         >
-          PDF Yuklab olish
+          download  PDF
         </button>
       </div>
       <Footer />
