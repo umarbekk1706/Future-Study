@@ -31,7 +31,7 @@ function Detail() {
     <div className={styles.blogContainer}>
       
       <Link to="/blogs" className={styles.backLink}>
-        ← Orqaga
+        ← Back
       </Link>
 
       

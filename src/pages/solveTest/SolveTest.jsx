@@ -147,7 +147,6 @@ function SolveTest() {
       </div>
       <Footer />
 
-      {/* Modal (Natijani ko‘rsatadi) */}
       <Dialog
         open={openModal}
         onClose={handleCloseModal}
