@@ -32,7 +32,7 @@ function SolveTest() {
         setTimeLeft(totalTime);
       });
   }, [id]);
-  console.log(test);
+
 
  
   useEffect(() => {
