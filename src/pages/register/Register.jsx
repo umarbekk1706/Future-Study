@@ -29,7 +29,7 @@ function Register() {
         const users = await res1.json();
         const newUser = users.find((u) => u.username === user.username);
         if (newUser) {
-          alert("Bunday username mavjud boshqa username tanlang");
+          alert("This username is already taken, please choose another one.");
         } else {
           const res = await fetch(
             "https://6825bb6d0f0188d7e72e379f.mockapi.io/users",
@@ -50,7 +50,7 @@ function Register() {
         console.log(error);
       }
     } else {
-      alert("Malumotlarni to'ldiring!");
+      alert("Fill in the information!");
     }
   }
 
@@ -73,7 +73,7 @@ function Register() {
             value={user.name}
             id="name"
             type="text"
-            placeholder="Ismingizni kiriting "
+            placeholder="Enter your name "
           />
           <label htmlFor="familya">Last name</label>
           <input
@@ -83,7 +83,7 @@ function Register() {
             value={user.lastname}
             id="familya"
             type="text"
-            placeholder="Familya kiriting "
+            placeholder="Enter your last name"
           />
           <label htmlFor="username">Username</label>
           <input
@@ -93,7 +93,7 @@ function Register() {
             value={user.username}
             id="username"
             type="text"
-            placeholder="Username kiriting "
+            placeholder="Enter your Username  "
           />
           <label htmlFor="email">Email</label>
           <input
@@ -101,7 +101,7 @@ function Register() {
             value={user.email}
             id="email"
             type="email"
-            placeholder="Email kiriting "
+            placeholder="Enter your Email  "
           />
           <label htmlFor="password">Password</label>
           <input
@@ -111,7 +111,7 @@ function Register() {
             value={user.password}
             id="password"
             type="password"
-            placeholder="Parol kiriting "
+            placeholder="Enter your Password  "
           />
           <button type="submit" id="submit-btn" onClick={reg}>
             Log up

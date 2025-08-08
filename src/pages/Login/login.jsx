@@ -11,7 +11,7 @@ function Login() {
   async function check(e) {
     e.preventDefault();
     if (username.trim().length < 1 || password.trim().length < 1) {
-      alert("Username va Parol kiriting!!");
+      alert("Enter your username and password!!");
       return;
     }
     try {
@@ -24,11 +24,11 @@ function Login() {
         localStorage.setItem("user", JSON.stringify(user));
         navigate("/");
       } else {
-        alert("Username yoki parol xato!!");
+        alert("Invalid username or password!!");
       }
     } catch (error) {
       console.error("Xatolik:", error);
-      alert("Ma'lumotlarni olishda xatolik yuz berdi.");
+      alert("An error occurred while fetching the data.");
     }
   }
   return (
@@ -48,7 +48,7 @@ function Login() {
             value={username}
             id="username"
             type="text"
-            placeholder="Username kiriting"
+            placeholder="Enter your username"
           />
           <label htmlFor="password">Password</label>
           <input
@@ -56,7 +56,7 @@ function Login() {
             value={password}
             id="password"
             type="password"
-            placeholder="Parol kiriting"
+            placeholder="Enter your password"
           />
           <button type="submit" id="submit-btn" onClick={check}>
             Login
