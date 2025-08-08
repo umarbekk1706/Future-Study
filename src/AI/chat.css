@@ -1,4 +1,4 @@
-#chat-container {
+/* #chat-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -32,7 +32,7 @@
 }
 
 
-/* -------------------------------------------------- */
+
 #chat-widget.fullscreen {
   position: fixed !important;
   top: 0;
@@ -88,7 +88,7 @@
   border: none;
 }
 
-/* -------------------------------------------------- */
+
 
 #chat-header {
   color: white;
@@ -196,4 +196,4 @@
   border: none;
   border-radius: 6px;
   margin-top: 10px;
-}
+} */

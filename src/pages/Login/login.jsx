@@ -36,7 +36,7 @@ function Login() {
       <div className={styles.loginBox}>
         <Link to="/">
           <button className={styles.backbtn}>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </button>
         </Link>
         <form className={styles.form}>

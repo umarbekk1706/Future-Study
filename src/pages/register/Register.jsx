@@ -66,7 +66,7 @@ function Register() {
           <img src="https://account.asus.com/img/login_img02.png" alt="sdf" />
         </div>
         <form action="" className={styles.form}>
-          <h2>Log up</h2>
+          <h2>Register</h2>
           <label htmlFor="name">Name</label>
           <input
             onChange={(e) => setUser({ ...user, name: e.target.value.trim() })}

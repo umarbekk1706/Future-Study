@@ -4,7 +4,7 @@ import CoursePage from "../pages/Courses";
 import LoginPage from "../pages/Login/login";
 import TestPage from "../pages/test/Test";
 import SolveTest from "../pages/solveTest/SolveTest";
-import ChatOverlay from "../AI/ChatOverlay";
+// import ChatOverlay from "../AI/ChatOverlay";
 import Register from "../pages/register/Register";
 import Coursehome from "../pages/coursehome/Coursehome";
 import CertificatePage from "../pages/certificatePage/certificatePage";
@@ -18,7 +18,7 @@ import Detail from "../pages/detail/Detail";
 function Root() {
   return (
     <>
-    <ChatOverlay/>
+    {/* <ChatOverlay/> */}
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/course/:id" element={<CoursePage/>} />

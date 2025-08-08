@@ -11,6 +11,9 @@ function Header() {
   const login = () => {
     navigate("/login");
   };
+  const register = () => {
+    navigate("/register");
+  };
 
   const logout = () => {
     localStorage.removeItem("user");
@@ -70,7 +73,7 @@ function Header() {
               <button onClick={login} className={styles.loginBtn}>
                 Log in 
               </button>
-              <button onClick={login} className={styles.signupBtn}>
+              <button onClick={register} className={styles.signupBtn}>
                 Log up
               </button>
             </div>
