@@ -44,13 +44,13 @@ function CoursePage() {
           </div>
 
           <div className={styles.videoSection}>
-            {/* <ReactPlayer
+            <ReactPlayer
               url={`${activeVideo}?rel=0`}
               controls
               width="100%"
               height="100%"
               className={styles.player}
-            /> */}  
+            />  
           </div>
         </div>
         <div className={styles.videoList}>
