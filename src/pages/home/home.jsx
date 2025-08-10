@@ -82,7 +82,7 @@ function Home() {
       </div>
 
       <div className={styles.reviewsSection} id="review">
-        <h2 className={styles.reviewsTitle}>Terms of Use yoki Terms and Conditions</h2>
+        <h2 className={styles.reviewsTitle}>Terms of Use</h2>
         <div className={styles.reviewsGrid}>
           <div className={styles.reviewCard}>
             <div className={styles.stars}>★★★★★</div>

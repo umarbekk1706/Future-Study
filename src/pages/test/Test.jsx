@@ -42,7 +42,7 @@ function Test() {
               <h3>{test.title}</h3>
               <p>Savollar soni: {test.questions?.length || 0}</p>
               <button onClick={() => handleStartTest(test.id)}>
-                Testni boshlash
+                Start test
               </button>
             </div>
           ))}
