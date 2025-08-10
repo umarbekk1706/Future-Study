@@ -481,7 +481,7 @@ const deleteUser = async (userId) => {
               <input type="text" id="login" name="login" required placeholder="Enter Login " />
             </div>
             <div className={styles.inputGroup}>
-              <label htmlFor="password">Parol:</label>
+              <label htmlFor="password">Password:</label>
               <input type="password" id="password" name="password" required placeholder="Enter Password " />
             </div>
             <button type="submit" className={styles.loginBtn}>
