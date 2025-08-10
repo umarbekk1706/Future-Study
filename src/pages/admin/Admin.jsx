@@ -66,7 +66,7 @@ const Admin = () => {
       setIsLoggedIn(true)
       setActiveSection("statistics")
     } else {
-      alert("Noto'g'ri login yoki parol!")
+      alert("Incorrect login or password!")
     }
   }
 
@@ -478,14 +478,14 @@ const deleteUser = async (userId) => {
           <form onSubmit={handleLogin} className={styles.loginForm}>
             <div className={styles.inputGroup}>
               <label htmlFor="login">Login:</label>
-              <input type="text" id="login" name="login" required placeholder="Login kiriting" />
+              <input type="text" id="login" name="login" required placeholder="Enter Login " />
             </div>
             <div className={styles.inputGroup}>
               <label htmlFor="password">Parol:</label>
-              <input type="password" id="password" name="password" required placeholder="Parol kiriting" />
+              <input type="password" id="password" name="password" required placeholder="Enter Parol " />
             </div>
             <button type="submit" className={styles.loginBtn}>
-              Kirish
+              Login
             </button>
           </form>
         </div>
