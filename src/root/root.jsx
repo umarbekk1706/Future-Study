@@ -12,7 +12,7 @@ import Admin from "../pages/admin/Admin";
 import Blog from "../pages/blog/Blog";
 import Aboutus from "../pages/about-us/AboutUs";
 import Detail from "../pages/detail/Detail";
-
+import Not_found from "../pages/not_found/Not_found";
 
 
 function Root() {
@@ -32,7 +32,7 @@ function Root() {
         <Route path="/blogs" element={<Blog/>} />
         <Route path="/post/:id" element={<Detail />} />
         <Route path="/auth/admin" element={<Admin/>} />
-        <Route path="*" element={<>Not Found</>} />
+        <Route path="*" element={<Not_found/>} />
       </Routes>
       
     </>
