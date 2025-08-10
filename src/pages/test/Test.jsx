@@ -40,7 +40,7 @@ function Test() {
                 className={styles.testIcon}
               />
               <h3>{test.title}</h3>
-              <p>Savollar soni: {test.questions?.length || 0}</p>
+              <p>Number of questions: {test.questions?.length || 0}</p>
               <button onClick={() => handleStartTest(test.id)}>
                 Start test
               </button>
