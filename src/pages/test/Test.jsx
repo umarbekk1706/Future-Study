@@ -30,7 +30,7 @@ function Test() {
       <Header />
  <div className={styles.main} >
       <div className="container">
-        <h2 className={styles.title}>Testlar Ro'yxati</h2>
+        <h2 className={styles.title}>list of tests</h2>
         <div className={styles.testContainer}>
           {testlar.map((test) => (
             <div key={test.id} className={styles.card}>

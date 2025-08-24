@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.column}>
-          <h3 className={styles.title}>Tezkor havolalar</h3>
+          <h3 className={styles.title}>Quick links</h3>
           <ul className={styles.linkList}>
             <li>
               <Link to="/">Home</Link>
